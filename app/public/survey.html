@@ -169,7 +169,8 @@
         <br>
 
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+        <button type="submit" class="btn btn-primary btn-lg btn-block" type="submit" name="action" id="submitButton">
+
             <i class="fa fa-check-circle" aria-hidden="true"></i>
             Submit</button>
 
@@ -232,7 +233,7 @@
         }
 
         // Capture the form inputs
-        $("#submit").on("click", function (event) {
+        $("#submitButton").on("click", function (event) {
             event.preventDefault();
 
             // Form validation
